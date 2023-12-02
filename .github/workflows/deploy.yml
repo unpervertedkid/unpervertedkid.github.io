@@ -25,6 +25,11 @@ jobs:
       # Build the app using yarn
       - name: Build
         run: yarn build
+      
+      # Export the app to the out folder
+      - name: Export
+        run: yarn export
+        
       # Deploy the app to GitHub Pages using gh-pages branch
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
