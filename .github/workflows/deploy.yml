@@ -32,3 +32,21 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./out
           publish_branch: gh-pages
+
+      # Post a comment of the live site
+      - name: Comment PR
+        uses: actions/github-script@v5
+        if: github.event_name == 'pull_request' && github.base_ref != 'main'
+        with:
+          github-token: ${{secrets.GITHUB_TOKEN}}
+          script: |
+            const issue_number = context.issue.number;
+            const repository = context.repo.repo;
+            const owner = context.repo.owner;
+            const url = `https://${owner}.github.io/${repository}`;
+            github.rest.issues.createComment({
+              issue_number: issue_number,
+              owner: owner,
+              repo: repository,
+              body: `Deployment successful! Your site is available at ${url}`
+            });
