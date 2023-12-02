@@ -1,0 +1,34 @@
+# This workflow will build a Next.js app into a static site and deploy it to GitHub Pages
+name: Deploy to GitHub Pages
+
+# Trigger the workflow on push or pull request to the main branch
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+# Set the jobs to run
+jobs:
+  # This job will build and deploy the app
+  build-and-deploy:
+    # Run the job on ubuntu-latest
+    runs-on: ubuntu-latest
+    # Set the steps to run
+    steps:
+      # Check out the repository
+      - name: Checkout
+        uses: actions/checkout@v2
+      # Install dependencies using yarn
+      - name: Install dependencies
+        run: yarn install
+      # Build the app using yarn
+      - name: Build
+        run: yarn build
+      # Deploy the app to GitHub Pages using gh-pages branch
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./out
+          publish_branch: gh-pages
