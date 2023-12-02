@@ -1,0 +1,19 @@
+
+👋 Welcome!
+
+To get started, you can run the following commands:
+
+🏃 Start the development server:
+yarn dev
+
+🔨 Build the app for production:
+yarn build
+
+🌐 Start the production server:
+yarn start
+
+🧪 Run tests:
+yarn test
+
+
+Happy coding! 🚀

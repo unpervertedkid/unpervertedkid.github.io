@@ -1,11 +1,12 @@
 {
+  "name": "Portfolio",
   "image": "mcr.microsoft.com/devcontainers/javascript-node",
   "hostRequirements": {
     "cpus": 4
   },
   "waitFor": "onCreateCommand",
   "updateContentCommand": "yarn && yarn build",
-  "postCreateCommand": "",
+  "postCreateCommand": "sudo cp .devcontainer/welcome.txt /usr/local/etc/vscode-dev-containers/first-run-notice.txt",
   "postAttachCommand": {
     "server": "yarn dev"
   },
