@@ -14,7 +14,7 @@ const Resume = "https://docs.google.com/document/d/1zsrxP9fLozn-pqbv6muNRUILbcF1
 
 export default function Home(props) {
   return (
-    <div className="bg-white flex flex-col pl-20 pr-16 pt-6 max-md:px-5">
+    <div className="bg-white flex flex-col pt-6 max-md:px-5">
       <div className="items-stretch self-center flex justify-between gap-5 mt-0 max-md:justify-center max-md:mt-10">
         <Header
           Linkedin={Linkedin}

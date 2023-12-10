@@ -25,3 +25,11 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.hover\:text-brown:hover {
+  color: rgb(205, 133, 63); 
+}
+
+.waving-cursor {
+  cursor: url('/waving-emoji.png'), auto;
+}
