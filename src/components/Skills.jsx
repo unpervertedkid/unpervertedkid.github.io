@@ -1,6 +1,6 @@
 export default function Skills(props) {
   return (
-    <div className="bg-stone-900 self-stretch flex w-full flex-col justify-center items-center mt-36 px-16 py-12 rounded-[400px_0px] max-md:max-w-full max-md:mt-10 max-md:px-5">
+    <div className="bg-stone-900 self-stretch flex w-full flex-col justify-center items-center mt-36 px-16 py-12 rounded-[250px_0px] max-md:max-w-full max-md:mt-10 max-md:px-5">
       <div className="flex w-full max-w-[1125px] flex-col mt-28 mb-48 max-md:max-w-full max-md:my-10">
         <div className="text-white text-7xl font-extrabold self-center max-w-[745px] max-md:max-w-full max-md:text-4xl">
           Here’s what you can expect from me....
