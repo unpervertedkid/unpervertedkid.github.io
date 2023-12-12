@@ -1,3 +1,8 @@
+import Illustration1 from "./illlustrations/Illustration1";
+import Illustration2 from "./illlustrations/Illustration2";
+import Illustration3 from "./illlustrations/Illustration3";
+import Illustration4 from "./illlustrations/Illustration4";
+
 export default function Skills(props) {
   return (
 <div className="bg-stone-900 self-stretch flex w-full flex-col justify-center items-center mt-36 px-16 py-12 rounded-[40px] lg:rounded-[250px_0px] max-md:max-w-full max-md:mt-10 max-md:px-5">
@@ -8,11 +13,7 @@ export default function Skills(props) {
         <div className="self-stretch mt-28 max-md:max-w-full max-md:mt-10">
           <div className="gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0">
             <div className="flex flex-col items-stretch w-[51%] max-md:w-full max-md:ml-0">
-              <img
-                loading="lazy"
-                src="/Illustration1.svg"
-                className="aspect-[1.01] object-contain object-center w-full overflow-hidden grow max-md:max-w-full max-md:mt-10 hidden sm:block"
-              />
+              <Illustration1 className="aspect-[0.96] object-contain object-center w-full overflow-hidden grow max-md:max-w-full max-md:mt-10 hidden sm:block" />
             </div>
             <div className="flex flex-col items-stretch w-[49%] ml-5 max-md:w-full max-md:ml-0">
               <div className="flex flex-col items-stretch mt-3 max-md:max-w-full max-md:mt-10">
@@ -43,22 +44,14 @@ export default function Skills(props) {
               </div>
             </div>
             <div className="flex flex-col items-stretch w-[49%] ml-5 max-md:w-full max-md:ml-0">
-              <img
-                loading="lazy"
-                src="/Illustration2.svg"
-                className="aspect-[0.96] object-contain object-center w-full overflow-hidden grow max-md:max-w-full max-md:mt-10 hidden sm:block"
-              />
+              <Illustration2 className="aspect-[1.01] object-contain object-center w-full overflow-hidden grow max-md:max-w-full max-md:mt-10 hidden sm:block" />
             </div>
           </div>
         </div>
         <div className="self-stretch mt-28 max-md:max-w-full max-md:mt-10">
           <div className="gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0">
             <div className="flex flex-col items-stretch w-[51%] max-md:w-full max-md:ml-0">
-              <img
-                loading="lazy"
-                src="/Illustration3.svg"
-                className="aspect-[1.01] object-contain object-center w-full overflow-hidden grow max-md:max-w-full max-md:mt-10 hidden sm:block"
-              />
+              <Illustration3 className="aspect-[0.96] object-contain object-center w-full overflow-hidden grow max-md:max-w-full max-md:mt-10 hidden sm:block" />
             </div>
             <div className="flex flex-col items-stretch w-[49%] ml-5 max-md:w-full max-md:ml-0">
               <div className="flex flex-col items-stretch mt-3 max-md:max-w-full max-md:mt-10">
@@ -91,11 +84,7 @@ export default function Skills(props) {
               </div>
             </div>
             <div className="flex flex-col items-stretch w-[49%] ml-5 max-md:w-full max-md:ml-0">
-              <img
-                loading="lazy"
-                src="/Illustration4.svg"
-                className="aspect-[0.96] object-contain object-center w-full overflow-hidden grow max-md:max-w-full max-md:mt-10 hidden sm:block"
-              />
+              <Illustration4 className="aspect-[1.01] object-contain object-center w-full overflow-hidden grow max-md:max-w-full max-md:mt-10 hidden sm:block" />
             </div>
           </div>
         </div>
