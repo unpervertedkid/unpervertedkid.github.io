@@ -1,6 +1,6 @@
 export default function Skills(props) {
   return (
-    <div className="bg-stone-900 self-stretch flex w-full flex-col justify-center items-center mt-36 px-16 py-12 rounded-[400px_0px] max-md:max-w-full max-md:mt-10 max-md:px-5">
+<div className="bg-stone-900 self-stretch flex w-full flex-col justify-center items-center mt-36 px-16 py-12 rounded-[40px] lg:rounded-[250px_0px] max-md:max-w-full max-md:mt-10 max-md:px-5">
       <div className="flex w-full max-w-[1125px] flex-col mt-28 mb-48 max-md:max-w-full max-md:my-10">
         <div className="text-white text-7xl font-extrabold self-center max-w-[745px] max-md:max-w-full max-md:text-4xl">
           Here’s what you can expect from me....
@@ -11,7 +11,7 @@ export default function Skills(props) {
               <img
                 loading="lazy"
                 src="/Illustration1.svg"
-                className="aspect-[1.01] object-contain object-center w-full overflow-hidden grow max-md:max-w-full max-md:mt-10"
+                className="aspect-[1.01] object-contain object-center w-full overflow-hidden grow max-md:max-w-full max-md:mt-10 hidden sm:block"
               />
             </div>
             <div className="flex flex-col items-stretch w-[49%] ml-5 max-md:w-full max-md:ml-0">
@@ -36,9 +36,9 @@ export default function Skills(props) {
                   Dot Connector
                 </div>
                 <div className="text-white text-3xl mt-7">
-                  I join your team with conviction and openness, ready to
-                  listen to your needs, challenge your assumptions, and 
-                  reconnect the dots to find new opportunities and solutions.
+                  I join your team with conviction and openness, ready to listen
+                  to your needs, challenge your assumptions, and reconnect the
+                  dots to find new opportunities and solutions.
                 </div>
               </div>
             </div>
@@ -46,7 +46,7 @@ export default function Skills(props) {
               <img
                 loading="lazy"
                 src="/Illustration2.svg"
-                className="aspect-[0.96] object-contain object-center w-full overflow-hidden grow max-md:max-w-full max-md:mt-10"
+                className="aspect-[0.96] object-contain object-center w-full overflow-hidden grow max-md:max-w-full max-md:mt-10 hidden sm:block"
               />
             </div>
           </div>
@@ -57,7 +57,7 @@ export default function Skills(props) {
               <img
                 loading="lazy"
                 src="/Illustration3.svg"
-                className="aspect-[1.01] object-contain object-center w-full overflow-hidden grow max-md:max-w-full max-md:mt-10"
+                className="aspect-[1.01] object-contain object-center w-full overflow-hidden grow max-md:max-w-full max-md:mt-10 hidden sm:block"
               />
             </div>
             <div className="flex flex-col items-stretch w-[49%] ml-5 max-md:w-full max-md:ml-0">
@@ -94,7 +94,7 @@ export default function Skills(props) {
               <img
                 loading="lazy"
                 src="/Illustration4.svg"
-                className="aspect-[0.96] object-contain object-center w-full overflow-hidden grow max-md:max-w-full max-md:mt-10"
+                className="aspect-[0.96] object-contain object-center w-full overflow-hidden grow max-md:max-w-full max-md:mt-10 hidden sm:block"
               />
             </div>
           </div>
